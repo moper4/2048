@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dzy.game.game2048.view.ItemView?>
+<?import dzy.game.game2048.view.ScoreView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<VBox prefHeight="670.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dzy.game.game2048.launcher.Controller">
+    <HBox>
+        <Label id="2048lbl" maxWidth="1.7976931348623157E308" text="2048" HBox.hgrow="ALWAYS"/>
+        <VBox id="scorePane" alignment="CENTER" prefHeight="54.0" prefWidth="124.0">
+            <HBox.margin>
+                <Insets bottom="10.0" top="10.0"/>
+            </HBox.margin>
+
+            <Label id="scoreText" text="score"/>
+            <ScoreView fx:id="scoreView"/>
+        </VBox>
+    </HBox>
+
+    <TextFlow VBox.vgrow="SOMETIMES">
+        <padding>
+            <Insets top="10.0"/>
+        </padding>
+
+        <Text id="text1" text="Join the number and get to the "/>
+        <Text id="text2" text="2048 tile!"/>
+    </TextFlow>
+
+    <StackPane prefHeight="500.0" prefWidth="500.0">
+        <Group>
+            <ItemView fx:id="itemView"/>
+        </Group>
+    </StackPane>
+</VBox>

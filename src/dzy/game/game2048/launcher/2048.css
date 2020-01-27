@@ -1,0 +1,51 @@
+.root{
+    -fx-padding: 5 20 20 20;
+    -fx-background-color: #fbf8ef;
+}
+
+#2048lbl{
+    -fx-text-fill: #776e65;
+    -fx-font: bold 64 Arial;
+}
+
+#scorePane{
+    -fx-background-color: #bbada0;
+    -fx-background-radius: 5;
+}
+
+#scorePane #scoreText{
+    -fx-text-fill: #eee8e4;
+    -fx-font: bold 16 Arial;
+}
+
+#text1{
+    -fx-fill: #736f66;
+    -fx-font: 18 Arial;
+}
+
+#text2{
+    -fx-fill: #736f66;
+    -fx-font: bold 18 Arial;
+}
+
+.score-view{
+    -fx-text-fill: WHITE;
+    -fx-font: bold 24 Arial;
+}
+
+.item-pane{
+    -fx-background-color: #bbada0;
+    -fx-background-radius: 10;
+    -fx-vgap: 14;
+    -fx-hgap: 14;
+    -fx-padding: 14;
+}
+
+.item #num{
+    -fx-font: bold 40 Arial;
+}
+
+.item #bg{
+    -fx-arc-width: 5;
+    -fx-arc-height: 5;
+}
